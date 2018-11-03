@@ -6,7 +6,7 @@ logo_url:           https://ibb.co/g2KJ7f # Get it from GitHub API: https://api.
 
 # Site Settings
 url:                https://A-I-dan.github.io # main url
-baseurl:            /the-plain
+baseurl:            /blog
 permalink:          /:title # Post permalink
 timezone:           US/Eastern # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
