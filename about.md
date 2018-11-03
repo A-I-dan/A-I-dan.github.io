@@ -5,6 +5,8 @@ title: About
 
 Hello.
 
+Conatct Info.
+
 [Twitter](https://twitter.com/A_l_dan)
 
 [Github](https://github.com/A-I-dan)
