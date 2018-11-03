@@ -2,7 +2,7 @@
 title:              "A.I. Dan"
 description:        "Student blogging."
 author_name:        "A.I. Dan" # change this to your name
-logo_url:           https://github.com/A-I-dan # Get it from GitHub API: https://api.github.com/users/<username>
+logo_url:           https://avatars0.githubusercontent.com/u/44011439?s=400&u=11f543c6c15c9f3d610e3d6866316a09da99382a&v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
 url:                https://A-I-dan.github.io # main url
