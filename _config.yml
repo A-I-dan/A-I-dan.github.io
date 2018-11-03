@@ -6,7 +6,7 @@ logo_url:           https://avatars0.githubusercontent.com/u/44011439?s=400&u=11
 
 # Site Settings
 url:                https://A-I-dan.github.io # main url
-baseurl:            /
+baseurl:            /blog
 permalink:          /:title # Post permalink
 timezone:           US/Eastern # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
