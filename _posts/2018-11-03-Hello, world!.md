@@ -10,7 +10,7 @@ Notice the first word in our code is print. The print function in Python basical
 
 What about inside the parenthesis?
 
-What is inside the parenthesis is called a string. Technically it’s an array of characters.  A string is a type of data that resembles a sentence and is most often wrapped in quotation marks. You can you use single quotes ( ‘ ‘ ) or double quotes ( ” ” ), but you can not mix them. If you start with single quotes you must end in single quotes, and vice versa.
+What is inside the parenthesis is called a string. Technically it’s an array of characters.  A string is a type of data that resembles a sentence and is most often wrapped in quotation marks. You can use single quotes ( ‘ ‘ ) or double quotes ( ” ” ), but you can not mix them. If you start with single quotes you must end in single quotes, and vice versa.
 
 What about apostrophes?
 
