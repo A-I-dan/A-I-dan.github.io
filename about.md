@@ -5,7 +5,7 @@ title: About
 
 Hello.
 
-Conatct Info.
+Contact Info -
 
 [Twitter](https://twitter.com/A_l_dan)
 
