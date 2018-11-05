@@ -11,7 +11,7 @@
             <span class='frontName' id='frontName'><center>Aidan Wilson</center></span>
         </div>
         <hr class='lines' id='bottomName1'>
-        <hr class='lines' id='bottomName2' size='3.5' color='black' width='80%'>
+        <center><hr class='lines' id='bottomName2' size='3.5' color='black' width='80%'></center>
         <div class='address'>
             <ul>
                 <li class='streetAddress'>625 Harleysville Pike, Harleysville, PA 19438</li>
