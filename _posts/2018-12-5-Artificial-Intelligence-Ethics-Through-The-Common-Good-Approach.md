@@ -131,7 +131,7 @@ While still years, maybe even a century, away, AI needs policymakers to regulate
 
 Humans need to be very careful when walking on the thin ice that covers artificial superintelligence. The further advancement of AI is a double edged sword that has the capability to pose as an existential threat to humans.
 
-After researching the risks, the further development of AI, without any policies to regulate, it is not in the communities best interest, no matter how helpful it is in the present and short-term future.
+After researching the risks, the further development of AI, without any policies to regulate, is not in the communities best interest, no matter how helpful it is in the present and short-term future.
 
 <h4>Final Note</h4>
 
