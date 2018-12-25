@@ -3,6 +3,9 @@
 This blog post is a slightly condensed version of an ethical dilemma paper I wrote for one of my high school classes. We were given a week to write it and I was only able to work on it for a few days, so please excuse any possible mistakes.
 
 
+Quick Edit: After a I made a few revisions, I turned this essay in and received a 100%.
+
+
 I will post the link to the full version below as a PDF.
 
 <a href='https://drive.google.com/file/d/1jGT8lJo4G6o9s3Fjg5xAOb27ll_PxY7G/view?usp=sharing' download='newfilename'>Download the PDF Here</a>
