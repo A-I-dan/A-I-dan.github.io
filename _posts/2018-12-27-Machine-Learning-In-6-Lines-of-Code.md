@@ -30,7 +30,7 @@ I will start off by first visualizing the dataset we will be working with. Below
 
 Visual:
 
-<center>![alt text](iris_dataset_plot.png)</center>
+![alt text](iris_dataset_plot.png)
 
 
 The scatter matrix will show three colors, each representing a species:
