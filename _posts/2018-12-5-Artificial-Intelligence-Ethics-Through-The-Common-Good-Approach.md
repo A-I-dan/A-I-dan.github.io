@@ -6,7 +6,7 @@ This blog post is a slightly condensed version of an ethical dilemma paper I wro
 Quick Edit: After a I made a few revisions, I turned this essay in and received a 100%.
 
 
-I will post the link to the full version below as a PDF.
+I will post the link to the full version below as a PDF (before revisions).
 
 <a href='https://drive.google.com/file/d/1jGT8lJo4G6o9s3Fjg5xAOb27ll_PxY7G/view?usp=sharing' download='newfilename'>Download the PDF Here</a>
 
