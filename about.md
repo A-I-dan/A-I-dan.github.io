@@ -7,8 +7,5 @@ Hello.
 
 Contact Info -
 
-[Twitter](https://twitter.com/A_l_dan)
-
 [Github](https://github.com/A-I-dan)
 
-[Linkedin](https://www.linkedin.com/in/aidan-wilson-710314174/)
