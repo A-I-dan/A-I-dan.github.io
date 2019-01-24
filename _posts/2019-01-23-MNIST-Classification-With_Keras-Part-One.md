@@ -118,7 +118,7 @@ print('y value: ',y_train[7])
 
 
 
-![png](MNIST_BLOG_files/MNIST_BLOG_7_1.png)
+![png](images/MNIST_BLOG_files/MNIST_BLOG_7_1.png)
 
 
 ## Normalize The Data
@@ -290,7 +290,7 @@ plt.imshow(x_train[7], cmap='bone')
 
 
 
-![png](MNIST_BLOG_files/MNIST_BLOG_11_1.png)
+![png](images/MNIST_BLOG_files/MNIST_BLOG_11_1.png)
 
 
 ## Creating The Model
