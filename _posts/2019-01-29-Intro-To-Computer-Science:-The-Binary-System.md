@@ -69,6 +69,7 @@ Here is how to determine what a binary number translates to in the decimal syste
 (2) Above each binary digit (starting from the right), write the corresponding power of 2.
 
 8  4  2  1
+
 1  1  1  0
 
 (3) Add up each value with a 1 underneath of it. In this case, the binary number 1110 is equal to the decimal number 14. Because:
