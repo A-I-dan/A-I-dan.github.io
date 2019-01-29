@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Introduction to Computer Science: Binary System"
-subtitle:   "Computer Science: Binary System"
+title:      "Introduction to Computer Science: The Binary System"
+subtitle:   "Computer Science: Binary"
 date:       2019-01-24 12:00:00
 author:     "A.I. Dan"
 ---
