@@ -52,7 +52,7 @@ Imagine the decimal system. Lets pick a random number - 198.
 | 100        |     + 90     |      + 8 |
 | 100s place |  10s place   | 1s place |
 
-In the decimal system, the place values are determined by the powers on 10. It is a <b>base-10</b> system. For example:
+In the decimal system, the place values are determined by the powers of 10. It is a <b>base-10</b> system. For example:
 
 ![equation](http://mathurl.com/render.cgi?10%5E0%20-%2010%5E1%20-%2010%5E2%20-%2010%5E3%2C%20etc%0A%0A1s%20%20-%2010s%20-%20100s%20-%201000s%2C%20etc%5Cnocache)
 
@@ -71,7 +71,7 @@ Here is how to determine what a binary number translates to in the decimal syste
 8  4  2  1
 1  1  1  0
 
-(3) Add up each value with a 1 underneath it. In this case, the binary number 1110 is equal to the decimal number 14. Because:
+(3) Add up each value with a 1 underneath of it. In this case, the binary number 1110 is equal to the decimal number 14. Because:
 
 ![equation](http://mathurl.com/render.cgi?2%5E3%2C%202%5E2%2C%202%5E1%2C%202%5E0%0A%0A1%20-%201%20-%201%20-%200%0A%0A8+%204+2+%200%20%20%3D%2014%0A%5Cnocache)
 
@@ -100,3 +100,7 @@ We will convert the number 21 to binary. Heres how:
 ![equation](http://mathurl.com/render.cgi?%5Ctextmode%202%5E4%2C%202%5E3%2C%202%5E2%2C%202%5E1%2C%202%5E0%0A%0A16s%2C8s%2C4s%2C2s%2C1s%0A%0A1%20-%200%20-%201%20-0%20-1%5Cnocache)
 
 Now we have our answer. 21 in binary is 10101.
+
+## Conclusion
+
+This was just a short introduction to the binary system. I plan on writing more Introduction to Computer Science-like posts soon to cover all of the basics. 
