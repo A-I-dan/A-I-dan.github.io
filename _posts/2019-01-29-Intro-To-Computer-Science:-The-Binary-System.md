@@ -96,7 +96,7 @@ We will convert the number 21 to binary. Heres how:
 
 ![equation](http://mathurl.com/render.cgi?%5Ctextmode%202%5E4%2C%202%5E3%2C%202%5E2%2C%202%5E1%2C%202%5E0%0A%0A16s%2C8s%2C4s%2C2s%2C1s%0A%0A1%20-%20-%20-%201%20-%20-%20-1%5Cnocache)
 
-(5) Now fill in all the remaining place values with 0s underneath of them.
+(5) Now fill in all the remaining place values with 0s underneath of them. Add up every number with a 1 below it, this will give you your answer.
 
 ![equation](http://mathurl.com/render.cgi?%5Ctextmode%202%5E4%2C%202%5E3%2C%202%5E2%2C%202%5E1%2C%202%5E0%0A%0A16s%2C8s%2C4s%2C2s%2C1s%0A%0A1%20-%200%20-%201%20-0%20-1%5Cnocache)
 
