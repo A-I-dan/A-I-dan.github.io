@@ -17,7 +17,15 @@ The goal of creating this ML model is to distinguish between the three species o
 
 Here is the code we will be working with:
 
-<script src="https://gist.github.com/A-I-dan/c1852b9950c00850a4e59fa675646b9d.js"></script>
+<!--<script src="https://gist.github.com/A-I-dan/c1852b9950c00850a4e59fa675646b9d.js"></script>-->
+```python
+iris_dataset = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(iris_dataset['data'], iris_dataset['target'], random_state = 0)
+knn = KNeighborsClassifier(n_neighbors = 1)
+knn.fit(X_train, y_train)
+y_prediction = knn.predict(X_test)
+print('Accuracy: {:2f}'.format(np.mean(y_prediction == y_test)))
+```
 
 
 <b>Note</b>: For this model we will be using scikit-learn. Scikit-learn, in my opinion, would not be my first choice for learning what goes on underneath the hood of ML models. While I usually prefer to learn the "under the hood" part of the model, for this example we will not be going over that for simplicity reasons.
@@ -49,8 +57,13 @@ I will start off by explaining the needed Python packages to make this model wor
 
 Here are the packages you will need:
 
-<script src="https://gist.github.com/A-I-dan/43dc749f03a5af805d88817dd774a3fa.js"></script>
-
+<!--<script src="https://gist.github.com/A-I-dan/43dc749f03a5af805d88817dd774a3fa.js"></script>-->
+```python
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+import numpy as np
+```
 
 <b>(Line 1)</b>: `from sklearn.datasets import load_iris`
 
@@ -77,8 +90,20 @@ These next six lines of code are where we will create and test our model.
 
 Here is the code:
 
-<script src="https://gist.github.com/A-I-dan/79b8f87802bc13ad418447f4d6214112.js"></script>
+<!--<script src="https://gist.github.com/A-I-dan/79b8f87802bc13ad418447f4d6214112.js"></script>-->
+```python
+iris_dataset = load_iris()
 
+X_train, X_test, y_train, y_test = train_test_split(
+    iris_dataset['data'], iris_dataset['target'], random_state = 0)
+
+knn = KNeighborsClassifier(n_neighbors = 1)
+knn.fit(X_train, y_train)
+
+y_prediction = knn.predict(X_test)
+
+print('Accuracy: {:2f}'.format(np.mean(y_prediction == y_test)))
+```
 
 <b>(Line 1)</b> `iris_dataset = load_iris()`
 
@@ -140,8 +165,30 @@ Now that we have built our model for predicting the species of iris flowers, let
 
 Here is the code from above with a few modified lines for this example:
 
-<script src="https://gist.github.com/A-I-dan/c0bdbb5c1db77bcc5b811c9dd5bae346.js"></script>
+<!--<script src="https://gist.github.com/A-I-dan/c0bdbb5c1db77bcc5b811c9dd5bae346.js"></script>-->
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import load_iris
+from sklearn.neighbors import KNeighborsClassifier
+import numpy as np
 
+iris_dataset = load_iris()
+
+X_train, X_test, y_train, y_test = train_test_split(
+    iris_dataset['data'], iris_dataset['target'], random_state = 0)
+
+knn = KNeighborsClassifier(n_neighbors = 1)
+knn.fit(X_train, y_train)
+
+X_new_input = np.array([[4, 2.1, 2.2, 0.2]]) 
+X_newer_input = np.array([[6.2, 3.4, 5.4, 2.3]]) 
+
+prediction = knn.predict(X_new_input)
+print('Predicted Target Name: {}'.format(iris_dataset['target_names'][prediction]))
+
+prediction_2 = knn.predict(X_newer_input)
+print('Predicted Target Name: {}'.format(iris_dataset['target_names'][prediction_2]))
+```
 
 The top 12 lines are the same as before, with the extras added in starting at <b>line 14</b>.
 
