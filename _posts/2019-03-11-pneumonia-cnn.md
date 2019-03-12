@@ -62,8 +62,8 @@ Max pooling will sweep over each subregion, apply a max filter that will extract
 
 The example below shows a 4x4 matrix as our input. We will be using a 2x2 filter to sweep over our input matrix and we will also be using a stride of 2. The 2x2 pool size, or filter, will determine the amount by which we downscale the spatial dimensions. For a 2x2 pool size, we will downscale by half each time. The stride will determine the amount of steps to move while scanning the input matrix. For example, with a stride of 2, we will scan the input matrix from the red 2x2 to the green 2x2, etc. The region being scanned will move two blocks over each time.  
 
-![alt text](a-i-dan.github.io/images/CNN_Figures.png)
-![alt text](a-i-dan.github.io/images/CNN_Figures-2.png)
+![](a-i-dan.github.io/images/CNN_Figures.png?raw=true?raw=true)
+![](a-i-dan.github.io/images/CNN_Figures-2.png?raw=true)
 
 
 
