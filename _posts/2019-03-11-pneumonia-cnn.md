@@ -322,7 +322,8 @@ The first convolutional layer is our input layer.
 
 * <b>1st Max Pooling Layer</b>:
 The max pooling layers will only have one parameter for this model.
-  * The parameter is the pool size, or the factor to downscale the input's spatial dimensions. The pool size will be set to (2, 2), which will downscale by half each time. Refer to the earlier section "A Brief Introduction to a CNN's Architecture" for more details about the pooling layer.
+
+    - The parameter is the pool size, or the factor to downscale the input's spatial dimensions. The pool size will be set to (2, 2), which will downscale by half each time. Refer to the earlier section "A Brief Introduction to a CNN's Architecture" for more details about the pooling layer.
 
 * <b>2nd Convolutional and Max Pooling Layer</b>:
 The second convolutional layer and max pooling layer will be the same as the previous layers above. The second convolutional layer will not need the input size to be specified.
@@ -335,7 +336,7 @@ The third max pooling layer will be the same as the first two previous pooling l
 
 * <b>Flatten</b>:
 Flattening is required to convert multi-dimensional data into usable data for the fully connected layers. In order for the fully connected layers to work, we need to convert the convolutional layer's output to a 1D vector. Our convolutional layers will be using 2D data (images). This will have to be reshaped, or flattened, to one dimension before it is fed into the classifier.
-  - If we take a look at a portion of the model summary, the output data of the third max pooling layer has a shape of `(None, 6, 6, 64)`. The output shape after flattening is `(None, 2304)`. This is because (6 * 6 * 64) = 2304.
+    - If we take a look at a portion of the model summary, the output data of the third max pooling layer has a shape of `(None, 6, 6, 64)`. The output shape after flattening is `(None, 2304)`. This is because (6 * 6 * 64) = 2304.
 
     ```
     _________________________________________________________________
@@ -356,7 +357,7 @@ Flattening is required to convert multi-dimensional data into usable data for th
 * <b>Dense - Sigmoid</b>:
  Our final fully connected layer will use the <b>sigmoid function</b>. Our problem involves two classes: Pneumonia and normal. This is a binary classification problem where sigmoid can be used to return a probability between 0 and 1. If this were a multi-class classification, the sigmoid activation function would not be the weapon of choice. However, for this simple model, the sigmoid function works just fine. The sigmoid function can be defined as:
 
-<img src="https://latex.codecogs.com/png.latex?\dpi{120}&space;f(x)=\frac{1}{1&space;&plus;&space;e^{-x}}" title="f(x)=\frac{1}{1 + e^{-x}}" style='margin: auto; display: block'>
+<img src="https://latex.codecogs.com/png.latex?\dpi{120}&space;f(x)=\frac{1}{1&space;&plus;&space;e^{-x}}" title="f(x)=\frac{1}{1 + e^{-x}}" style='margin: auto; display: block;'>
 
 ```python
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
@@ -369,7 +370,7 @@ We can now configure the model using the compile method from Keras.
 
 * The second argument is the loss function. This model will use the <b>binary cross entropy</b> loss function. Our model will be conducting binary classification, so we can write this loss function as shown below, where "y" is either 0 or 1, indicating if the class label is the correct classification and where "p" is the model's predicted probability:
 
-<img src="https://latex.codecogs.com/gif.latex?-(y\log(p)&space;&plus;&space;(1&space;-&space;y)\log(1&space;-&space;p))" title="-(y\log(p) + (1 - y)\log(1 - p))" style='margin: auto; display: block'>
+<img src="https://latex.codecogs.com/gif.latex?-(y\log(p)&space;&plus;&space;(1&space;-&space;y)\log(1&space;-&space;p))" title="-(y\log(p) + (1 - y)\log(1 - p))" style='margin: auto; display: block;'>
 
 * The last argument is the metric function that will judge the performance of the model. In this case, we want the accuracy to be returned.
 
