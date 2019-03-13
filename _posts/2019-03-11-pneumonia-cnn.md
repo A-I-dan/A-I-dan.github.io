@@ -357,7 +357,7 @@ Flattening is required to convert multi-dimensional data into usable data for th
 * <b>Dense - Sigmoid</b>:
  Our final fully connected layer will use the <b>sigmoid function</b>. Our problem involves two classes: Pneumonia and normal. This is a binary classification problem where sigmoid can be used to return a probability between 0 and 1. If this were a multi-class classification, the sigmoid activation function would not be the weapon of choice. However, for this simple model, the sigmoid function works just fine. The sigmoid function can be defined as:
 
-<center><img src="https://latex.codecogs.com/png.latex?\dpi{120}&space;f(x)=\frac{1}{1&space;&plus;&space;e^{-x}}" title="f(x)=\frac{1}{1 + e^{-x}}"></center>
+<img src="https://latex.codecogs.com/png.latex?\dpi{120}&space;f(x)=\frac{1}{1&space;&plus;&space;e^{-x}}" title="f(x)=\frac{1}{1 + e^{-x}}" style='margin: auto; display: block'>
 
 ```python
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
@@ -370,7 +370,7 @@ We can now configure the model using the compile method from Keras.
 
 * The second argument is the loss function. This model will use the <b>binary cross entropy</b> loss function. Our model will be conducting binary classification, so we can write this loss function as shown below, where "y" is either 0 or 1, indicating if the class label is the correct classification and where "p" is the model's predicted probability:
 
-<center><img src="https://latex.codecogs.com/gif.latex?-(y\log(p)&space;&plus;&space;(1&space;-&space;y)\log(1&space;-&space;p))" title="-(y\log(p) + (1 - y)\log(1 - p))"></center>
+<img src="https://latex.codecogs.com/gif.latex?-(y\log(p)&space;&plus;&space;(1&space;-&space;y)\log(1&space;-&space;p))" title="-(y\log(p) + (1 - y)\log(1 - p))" style='margin: auto; display: block'>
 
 * The last argument is the metric function that will judge the performance of the model. In this case, we want the accuracy to be returned.
 
