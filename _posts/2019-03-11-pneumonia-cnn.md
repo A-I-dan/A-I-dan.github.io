@@ -33,9 +33,6 @@ To imagine the large number of parameters, think of our chest X-ray images. Thes
 
 ![arch](a-i-dan.github.io/images/cnn_arch.png?raw=true)
 
-<img src='a-i-dan.github.io/images/cnn_arch.png?raw=true' style="width:200px;">
-
-
 <br>
 
 Like all neural networks, CNNs have an input and output layer with a number of hidden layers that will apply an activation function, typically ReLu. A CNNs design will consist of three main layers: Convolutional layer, pooling layer, and the fully connected layer. Each layer will be covered below:
@@ -48,7 +45,8 @@ For this example, we will be using a filter size of 3x3. We only set the width a
 
 A convolutional layer convolves the input by sliding these filters around the input space while computing the dot product of the weights and inputs. The pixels within the filter will be converted to a single value that will represent the entire receptive field.
 
-![recept_field](a-i-dan.github.io/images/output_TMXYGX.gif?raw=true =400x)
+![recept_field](a-i-dan.github.io/images/output_TMXYGX.gif?raw=true)
+<img src='a-i-dan.github.io/images/output_TMXYGX.gif?raw=true' style='margin: auto; width: 200px;'>
 
 ### Pooling Layer:
 
@@ -60,9 +58,11 @@ Max pooling will sweep over each subregion, apply a max filter that will extract
 
 The example below shows a 4x4 matrix as our input. We will be using a 2x2 filter to sweep over our input matrix and we will also be using a stride of 2. The 2x2 pool size, or filter, will determine the amount by which we downscale the spatial dimensions. For a 2x2 pool size, we will downscale by half each time. The stride will determine the amount of steps to move while scanning the input matrix. For example, with a stride of 2, we will scan the input matrix from the red 2x2 to the green 2x2, etc. The region being scanned will move two blocks over each time.  
 
-![](a-i-dan.github.io/images/CNN_Figures.png?raw=true?raw=true =200x)
-![](a-i-dan.github.io/images/CNN_Figures-2.png?raw=true =200x)
+<!--![](a-i-dan.github.io/images/CNN_Figures.png?raw=true?raw=true)
+![](a-i-dan.github.io/images/CNN_Figures-2.png?raw=true)-->
+<img src='a-i-dan.github.io/images/CNN_Figures.png?raw=true' style='margin:auto; width: 300px;'>
 
+<img src='a-i-dan.github.io/images/CNN_Figures-2.png?raw=true' style='margin:auto; width: 300px;'
 
 
 
@@ -81,8 +81,8 @@ Pneumonia is an infectious inflammatory disease that affects the lungs of people
 Pneumonia is diagnosed in many ways, one common way of confirmation is through chest X-rays. Chest X-rays are the best tests, and most accurate, to determine if one has pneumonia. While it is crucial, detecting pneumonia can sometimes be a difficult task. Pneumonia often vaguely shows up in X-rays and can also get mixed in with other diseases present in that local area.
 
 
-![](a-i-dan.github.io/images/iu.jpg?raw=true)
-
+<!--![](a-i-dan.github.io/images/iu.jpg?raw=true)-->
+<img src='a-i-dan.github.io/images/iu.jpg?raw=true' style='margin: auto; width: 500px;'
 
 <center><a href='https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mznEecI8B-fpfXm8fEQymAHaGN%26pid%3D15.1&f=1'>Image Source</a></center>
 
