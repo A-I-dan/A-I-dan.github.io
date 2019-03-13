@@ -34,8 +34,6 @@ To imagine the large number of parameters, think of our chest X-ray images. Thes
 ![arch](a-i-dan.github.io/images/cnn_arch.png?raw=true)
 
 
-<center><a href='http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf'>Image Source</a></center>
-
 <br>
 
 Like all neural networks, CNNs have an input and output layer with a number of hidden layers that will apply an activation function, typically ReLu. A CNNs design will consist of three main layers: Convolutional layer, pooling layer, and the fully connected layer. Each layer will be covered below:
