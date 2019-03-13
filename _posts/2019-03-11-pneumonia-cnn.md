@@ -371,6 +371,7 @@ We can now configure the model using the compile method from Keras.
 
 <img src="https://latex.codecogs.com/gif.latex?-(y\log(p)&space;&plus;&space;(1&space;-&space;y)\log(1&space;-&space;p))" title="-(y\log(p) + (1 - y)\log(1 - p))" style='margin: auto; display: block;'>
 
+
 * The last argument is the metric function that will judge the performance of the model. In this case, we want the accuracy to be returned.
 
 
