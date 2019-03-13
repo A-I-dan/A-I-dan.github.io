@@ -33,7 +33,7 @@ To imagine the large number of parameters, think of our chest X-ray images. Thes
 
 ![arch](a-i-dan.github.io/images/cnn_arch.png?raw=true)
 
-<img src='a-i-dan.github.io/images/cnn_arch.png?raw=true' style="width:200px;"">
+<img src='a-i-dan.github.io/images/cnn_arch.png?raw=true' style="width:200px;">
 
 
 <br>
