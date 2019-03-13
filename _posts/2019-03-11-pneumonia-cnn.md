@@ -322,8 +322,7 @@ The first convolutional layer is our input layer.
 
 * <b>1st Max Pooling Layer</b>:
 The max pooling layers will only have one parameter for this model.
-
-    * The parameter is the pool size, or the factor to downscale the input's spatial dimensions. The pool size will be set to (2, 2), which will downscale by half each time. Refer to the earlier section "A Brief Introduction to a CNN's Architecture" for more details about the pooling layer.
+  * The parameter is the pool size, or the factor to downscale the input's spatial dimensions. The pool size will be set to (2, 2), which will downscale by half each time. Refer to the earlier section "A Brief Introduction to a CNN's Architecture" for more details about the pooling layer.
 
 * <b>2nd Convolutional and Max Pooling Layer</b>:
 The second convolutional layer and max pooling layer will be the same as the previous layers above. The second convolutional layer will not need the input size to be specified.
