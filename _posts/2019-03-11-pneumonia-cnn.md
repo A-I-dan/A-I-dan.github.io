@@ -28,12 +28,7 @@ Like all common neural networks, CNNs have neurons with adjustable weights and b
 To imagine the large number of parameters, think of our chest X-ray images. These images will have an input shape of 64x64x3, or 64 wide, 64 high, with 3 color channels. If a fully connected neural network were to be used, this would mean that a single neuron in a single hidden layer would consist of 12,288 connections (64 x 64 x 3 = 12,288) [(CS231n, 2018)](http://cs231n.github.io/convolutional-networks/). This is with only one fully connected neuron. Imagine the number of all the weights in a neural network with many neurons! It is easy to understand why fully connected neural networks would not be the most efficient method of classifying images. This is where CNNs come in handy, except a CNN's architecture does in fact include a few fully connected layer(s).
 
 ## A Brief Introduction to a CNN's Architecture
-<br>
-
-
 ![arch](a-i-dan.github.io/images/cnn_arch.png?raw=true)
-
-<br>
 
 Like all neural networks, CNNs have an input and output layer with a number of hidden layers that will apply an activation function, typically ReLu. A CNNs design will consist of three main layers: Convolutional layer, pooling layer, and the fully connected layer. Each layer will be covered below:
 
@@ -46,7 +41,7 @@ For this example, we will be using a filter size of 3x3. We only set the width a
 A convolutional layer convolves the input by sliding these filters around the input space while computing the dot product of the weights and inputs. The pixels within the filter will be converted to a single value that will represent the entire receptive field.
 
 ![recept_field](a-i-dan.github.io/images/output_TMXYGX.gif?raw=true)
-<img src='a-i-dan.github.io/images/output_TMXYGX.gif?raw=true' style='margin: auto; width: 500px;'>
+<img src='a-i-dan.github.io/images/output_TMXYGX.gif?raw=true' style='margin: auto; width: 500px; display: block;'>
 
 ### Pooling Layer:
 
@@ -60,9 +55,9 @@ The example below shows a 4x4 matrix as our input. We will be using a 2x2 filter
 
 <!--![](a-i-dan.github.io/images/CNN_Figures.png?raw=true?raw=true)
 ![](a-i-dan.github.io/images/CNN_Figures-2.png?raw=true)-->
-<img src='a-i-dan.github.io/images/CNN_Figures.png?raw=true' style='margin:auto; width: 600px;'>
+<img src='a-i-dan.github.io/images/CNN_Figures.png?raw=true' style='margin:auto; width: 500px; display: block;'>
 
-<img src='a-i-dan.github.io/images/CNN_Figures-2.png?raw=true' style='margin:auto; width: 600px;'>
+<img src='a-i-dan.github.io/images/CNN_Figures-2.png?raw=true' style='margin:auto; width: 500px; display: block;'>
 
 
 
@@ -82,7 +77,7 @@ Pneumonia is diagnosed in many ways, one common way of confirmation is through c
 
 
 <!--![](a-i-dan.github.io/images/iu.jpg?raw=true)-->
-<img src='a-i-dan.github.io/images/iu.jpg?raw=true' style='margin: auto; width: 500px;'>
+<img src='a-i-dan.github.io/images/iu.jpg?raw=true' style='margin: auto; width: 250px; display: block;'>
 
 <center><a href='https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mznEecI8B-fpfXm8fEQymAHaGN%26pid%3D15.1&f=1'>Image Source</a></center>
 
