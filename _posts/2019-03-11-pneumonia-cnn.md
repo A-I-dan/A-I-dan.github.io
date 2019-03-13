@@ -31,7 +31,7 @@ To imagine the large number of parameters, think of our chest X-ray images. Thes
 <br>
 
 <center>
-![](a-i-dan.github.io/images/cnn_arch.png?raw=true)
+![arch](a-i-dan.github.io/images/cnn_arch.png?raw=true)
 </center>
 
 <center><a href='http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf'>Image Source</a></center>
@@ -48,7 +48,7 @@ For this example, we will be using a filter size of 3x3. We only set the width a
 
 A convolutional layer convolves the input by sliding these filters around the input space while computing the dot product of the weights and inputs. The pixels within the filter will be converted to a single value that will represent the entire receptive field.
 
-![](a-i-dan.github.io/images/output_TMXYGX.gif?raw=true =400x)
+![recept_field](a-i-dan.github.io/images/output_TMXYGX.gif?raw=true =400x)
 
 ### Pooling Layer:
 
@@ -60,8 +60,8 @@ Max pooling will sweep over each subregion, apply a max filter that will extract
 
 The example below shows a 4x4 matrix as our input. We will be using a 2x2 filter to sweep over our input matrix and we will also be using a stride of 2. The 2x2 pool size, or filter, will determine the amount by which we downscale the spatial dimensions. For a 2x2 pool size, we will downscale by half each time. The stride will determine the amount of steps to move while scanning the input matrix. For example, with a stride of 2, we will scan the input matrix from the red 2x2 to the green 2x2, etc. The region being scanned will move two blocks over each time.  
 
-![](a-i-dan.github.io/images/CNN_Figures.png?raw=true?raw=true =400x)
-![](a-i-dan.github.io/images/CNN_Figures-2.png?raw=true =400x)
+![](a-i-dan.github.io/images/CNN_Figures.png?raw=true?raw=true =200x)
+![](a-i-dan.github.io/images/CNN_Figures-2.png?raw=true =200x)
 
 
 
