@@ -323,20 +323,20 @@ The first convolutional layer is our input layer.
 * <b>1st Max Pooling Layer</b>:
 The max pooling layers will only have one parameter for this model.
 
-    - The parameter is the pool size, or the factor to downscale the input's spatial dimensions. The pool size will be set to (2, 2), which will downscale by half each time. Refer to the earlier section "A Brief Introduction to a CNN's Architecture" for more details about the pooling layer.
+    * The parameter is the pool size, or the factor to downscale the input's spatial dimensions. The pool size will be set to (2, 2), which will downscale by half each time. Refer to the earlier section "A Brief Introduction to a CNN's Architecture" for more details about the pooling layer.
 
 * <b>2nd Convolutional and Max Pooling Layer</b>:
 The second convolutional layer and max pooling layer will be the same as the previous layers above. The second convolutional layer will not need the input size to be specified.
 
 * <b>3rd Convolutional Layer</b>:
-In the third convolutional layer, the first parameter will be changed. In the first two convolutional layers, the number of filters, or neurons in the layer, was set to "32", but for the thrid layer it will be set to "64". Other than this one change, everything else will stay the same.
+In the third convolutional layer, the first parameter will be changed. In the first two convolutional layers, the number of filters, or neurons in the layer, was set to "32", but for the third layer it will be set to "64". Other than this one change, everything else will stay the same.
 
 * <b>3rd Max Pooling Layer</b>:
 The third max pooling layer will be the same as the first two previous pooling layers.
 
 * <b>Flatten</b>:
 Flattening is required to convert multi-dimensional data into usable data for the fully connected layers. In order for the fully connected layers to work, we need to convert the convolutional layer's output to a 1D vector. Our convolutional layers will be using 2D data (images). This will have to be reshaped, or flattened, to one dimension before it is fed into the classifier.
-    - If we take a look at a portion of the model summary, the output data of the third max pooling layer has a shape of `(None, 6, 6, 64)`. The output shape after flattening is `(None, 2304)`. This is because (6 * 6 * 64) = 2304.
+    * If we take a look at a portion of the model summary, the output data of the third max pooling layer has a shape of `(None, 6, 6, 64)`. The output shape after flattening is `(None, 2304)`. This is because (6 * 6 * 64) = 2304.
 
     ```
     _________________________________________________________________
