@@ -30,9 +30,9 @@ To imagine the large number of parameters, think of our chest X-ray images. Thes
 ## A Brief Introduction to a CNN's Architecture
 <br>
 
-<center>
+
 ![arch](a-i-dan.github.io/images/cnn_arch.png?raw=true)
-</center>
+
 
 <center><a href='http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf'>Image Source</a></center>
 
@@ -80,9 +80,9 @@ Pneumonia is an infectious inflammatory disease that affects the lungs of people
 
 Pneumonia is diagnosed in many ways, one common way of confirmation is through chest X-rays. Chest X-rays are the best tests, and most accurate, to determine if one has pneumonia. While it is crucial, detecting pneumonia can sometimes be a difficult task. Pneumonia often vaguely shows up in X-rays and can also get mixed in with other diseases present in that local area.
 
-<center>
+
 ![](a-i-dan.github.io/images/iu.jpg?raw=true)
-</center>
+
 
 <center><a href='https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mznEecI8B-fpfXm8fEQymAHaGN%26pid%3D15.1&f=1'>Image Source</a></center>
 
