@@ -366,7 +366,6 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 We can now configure the model using the compile method from Keras.
 
 * The first argument is the optimizer which will be set to "adam". The adam optimizer is one of the most popular algorithms in deep learning right now. The authors of [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980v8) state that Adam combines the advantages of two other popular optimizers: RMSProp and AdaGrad. You can read about the effectiveness of Adam for CNNs in section 6.3 of the Adam paper.
-<br>
 
 * The second argument is the loss function. This model will use the <b>binary cross entropy</b> loss function. Our model will be conducting binary classification, so we can write this loss function as shown below, where "y" is either 0 or 1, indicating if the class label is the correct classification and where "p" is the model's predicted probability:
 
