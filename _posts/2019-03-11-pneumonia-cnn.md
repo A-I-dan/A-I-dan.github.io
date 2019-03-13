@@ -40,7 +40,6 @@ For this example, we will be using a filter size of 3x3. We only set the width a
 
 A convolutional layer convolves the input by sliding these filters around the input space while computing the dot product of the weights and inputs. The pixels within the filter will be converted to a single value that will represent the entire receptive field.
 
-![recept_field](a-i-dan.github.io/images/output_TMXYGX.gif?raw=true)
 <img src='a-i-dan.github.io/images/output_TMXYGX.gif?raw=true' style='margin: auto; width: 500px; display: block;'>
 
 ### Pooling Layer:
@@ -77,7 +76,7 @@ Pneumonia is diagnosed in many ways, one common way of confirmation is through c
 
 
 <!--![](a-i-dan.github.io/images/iu.jpg?raw=true)-->
-<img src='a-i-dan.github.io/images/iu.jpg?raw=true' style='margin: auto; width: 250px; display: block;'>
+<img src='a-i-dan.github.io/images/iu.jpg?raw=true' style='margin: auto; width: 400px; display: block;'>
 
 <center><a href='https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mznEecI8B-fpfXm8fEQymAHaGN%26pid%3D15.1&f=1'>Image Source</a></center>
 
