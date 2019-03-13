@@ -307,7 +307,7 @@ This is the exciting part.
 
 * First, we create our model using the "Sequential" model from Keras. This model is a linear stack of layers, meaning that we will create our model layer-by-layer.
 
-* <b>1st Convolutional Layer</b>:
+* **1st Convolutional Layer:**
 The first convolutional layer is our input layer.
 
     * The first parameter is the amount of convolutional filters to use in the layer, which is set to "32". This is also the number of neurons, or nodes, that will be in this layer.
@@ -320,21 +320,21 @@ The first convolutional layer is our input layer.
 
     * The final parameter is the padding, which is set to "same". This will pad the input in a way that makes the output have the same length as the initial input.  
 
-* <b>1st Max Pooling Layer</b>:
+* **1st Max Pooling Layer:**
 The max pooling layers will only have one parameter for this model.
 
     * The parameter is the pool size, or the factor to downscale the input's spatial dimensions. The pool size will be set to (2, 2), which will downscale by half each time. Refer to the earlier section "A Brief Introduction to a CNN's Architecture" for more details about the pooling layer.
 
-* <b>2nd Convolutional and Max Pooling Layer</b>:
+* **2nd Convolutional and Max Pooling Layer:**
 The second convolutional layer and max pooling layer will be the same as the previous layers above. The second convolutional layer will not need the input size to be specified.
 
-* <b>3rd Convolutional Layer</b>:
+* **3rd Convolutional Layer:**
 In the third convolutional layer, the first parameter will be changed. In the first two convolutional layers, the number of filters, or neurons in the layer, was set to "32", but for the third layer it will be set to "64". Other than this one change, everything else will stay the same.
 
-* <b>3rd Max Pooling Layer</b>:
+* **3rd Max Pooling Layer:**
 The third max pooling layer will be the same as the first two previous pooling layers.
 
-* <b>Flatten</b>:
+* **Flatten:**
 Flattening is required to convert multi-dimensional data into usable data for the fully connected layers. In order for the fully connected layers to work, we need to convert the convolutional layer's output to a 1D vector. Our convolutional layers will be using 2D data (images). This will have to be reshaped, or flattened, to one dimension before it is fed into the classifier.
     * If we take a look at a portion of the model summary, the output data of the third max pooling layer has a shape of `(None, 6, 6, 64)`. The output shape after flattening is `(None, 2304)`. This is because (6 * 6 * 64) = 2304.
 
@@ -348,13 +348,13 @@ Flattening is required to convert multi-dimensional data into usable data for th
     _________________________________________________________________
     ```
 
-* <b>Dense - ReLu</b>:
+* **Dense - ReLu:**
  Dense layers are the fully connected layers, meaning that every neuron is connected to all the neurons in previous layers. We will be using 128 nodes. This also means that the fully connected layer with have an output size of 128. For this fully connected layer, the ReLu activation function will be used.
 
-* <b>Dropout</b>:
+* **Dropout:**
  Dropout is used to regularize our model and reduce overfitting. Dropout will temporarily "drop out" random nodes in the fully connected layers. This dropping out of nodes will result in a thinned neural network that consists of the nodes that were not dropped. Dropout reduces overfitting and helps the model generalize due to the fact that no specific node can be 100% reliable. The ".5" means that the probability of a certain node being dropped is 50%. To read more about dropout, check out [this paper](http://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf).
 
-* <b>Dense - Sigmoid</b>:
+* **Dense - Sigmoid:**
  Our final fully connected layer will use the <b>sigmoid function</b>. Our problem involves two classes: Pneumonia and normal. This is a binary classification problem where sigmoid can be used to return a probability between 0 and 1. If this were a multi-class classification, the sigmoid activation function would not be the weapon of choice. However, for this simple model, the sigmoid function works just fine. The sigmoid function can be defined as:
 
 <img src="https://latex.codecogs.com/png.latex?\dpi{120}&space;f(x)=\frac{1}{1&space;&plus;&space;e^{-x}}" title="f(x)=\frac{1}{1 + e^{-x}}" style='margin: auto; display: block;'>
