@@ -336,6 +336,7 @@ The third max pooling layer will be the same as the first two previous pooling l
 
 * **Flatten:**
 Flattening is required to convert multi-dimensional data into usable data for the fully connected layers. In order for the fully connected layers to work, we need to convert the convolutional layer's output to a 1D vector. Our convolutional layers will be using 2D data (images). This will have to be reshaped, or flattened, to one dimension before it is fed into the classifier.
+
     * If we take a look at a portion of the model summary, the output data of the third max pooling layer has a shape of `(None, 6, 6, 64)`. The output shape after flattening is `(None, 2304)`. This is because (6 * 6 * 64) = 2304.
 
     ```
