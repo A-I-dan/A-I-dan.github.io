@@ -19,7 +19,7 @@ The goal of federated learning algorithms is to train a model on data kept among
 
 The model will use a large number of clients to pull from. Training data will still be stored locally on each device, but each device will download the model, perform computations on their local data, produce a small update for the model, then update the model and send it back to the central server. This enables each client to contribute to the global models training while still storing its data locally. Each client will only send back an update to the global model, where it will then be averaged with other clients updates.
 
-![fed_learning_chart](a-i-dan.github.io/images/privacy in deep learning figures.png?raw=true)
+<img src='a-i-dan.github.io/images/privacy in deep learning figures.png?raw=true' style='margin: auto; display: block;'>
 
 <b>Recommended Read:</b>
 
