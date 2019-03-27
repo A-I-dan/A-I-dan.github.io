@@ -18,7 +18,7 @@ Supervised learning can be split into two subcategories: <b>Classification</b> a
 
 ### Classification
 
-<img src='?raw=true' style='margin: auto; display: block;'>
+<img src='a-i-dan.github.io/images/supervised_learning_post/supervised learning post.png?raw=true' style='margin: auto; display: block;'>
 
 During training, a classification algorithm will be given data points with an assigned category. The job of a classification algorithm is to then take an input value and assign it a class, or category, that it fits into based on the training data provided.
 
