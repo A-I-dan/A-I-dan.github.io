@@ -33,4 +33,11 @@ Classification problems can be solved with a numerous amount of algorithms. It i
 
 ### Regression
 
-Regression is a statistical process where the model attempts to find the best relationship .  
+<img src='?raw=true' style='margin: auto; display: block;'>
+
+Regression is a predictive statistical process where the model attempts to find the important relationship between dependent and independent variables.  
+
+There are many different types of regression algorithms. The three most common are listed below:
+  * Linear Regression
+  * Logistic Regression
+  * Polynomial Regression
