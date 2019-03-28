@@ -132,8 +132,8 @@ Now let's plot the original data points with the line of best fit. We can then a
 ```python
 plt.scatter(X, y)
 plt.plot(xfit, yfit)
-plt.plot(3, 92.63, 'ro')
-plt.plot(-1.5, -45.60, 'ro')
+plt.plot(3, predict(3), 'ro')
+plt.plot(-1.5, predict(-1.5), 'ro')
 ```
 Output:
 <img src='a-i-dan.github.io/images/supervised_learning_post/reg_red.png?raw=true' style='margin: auto; display: block;'>
