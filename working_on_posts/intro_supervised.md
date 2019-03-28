@@ -33,7 +33,7 @@ Classification problems can be solved with a numerous amount of algorithms. It i
 
 ### Regression
 
-<img src='?raw=true' style='margin: auto; display: block;'>
+<img src='a-i-dan.github.io/images/supervised_learning_post/supervised learning post2.png?raw=true' style='margin: auto; display: block;'>
 
 Regression is a predictive statistical process where the model attempts to find the important relationship between dependent and independent variables.  
 
