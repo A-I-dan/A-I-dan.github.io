@@ -94,7 +94,8 @@ plt.scatter(X, y)
 plt.plot(xfit, yfit)
 ```
 Output:
-<img src='a-i-dan.github.io/images/supervised_learning_post/regression_data_with_line.png?raw=true' style='margin: auto; display: block;'>
+
+<img src='a-i-dan.github.io/images/supervised_learning_post/reg_data_with_line.png?raw=true' style='margin: auto; display: block;'>
 
 We will then print out the slope and intercept of the regression model.
 
