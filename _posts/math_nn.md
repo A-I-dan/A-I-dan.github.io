@@ -1,3 +1,9 @@
+---
+layout:     post
+title:      "Neural Network Math: Activation Functions"
+date:       2019-05-21 12:00:00
+author:     "A.I. Dan"
+---
 
 # Neural Network Math: Activation Functions
 
@@ -45,7 +51,7 @@ plt.legend(fontsize=12)
 plt.grid(True)
 plt.show()
 ```
-<img src='math_nn_files/math_nn_3_0.png' style='display: block; margin:auto;'>
+<img src='images/math_nn_files/math_nn_3_0.png' style='display: block; margin:auto;'>
 
 
 Everyone learns the formula for the slope of a line in middle school. The slope formula is commonly remembered as "rise over run", or the change in y divided by the change in x. A derivative is the same thing, the change in in y over the change in x, this can be written like this:
@@ -273,7 +279,7 @@ ax[0].set_ylim(-1, 1)
 
 plt.show()
 ```
-<img src='math_nn_files/math_nn_12_0.png' style='display: block; margin:auto;'>
+<img src='images/math_nn_files/math_nn_12_0.png' style='display: block; margin:auto;'>
 
 
 As mentioned earlier, the hyperbolic tangent function shares an S-shape curve with the sigmoid function. The left plot will show the ranges of the two activation functions, and will also show that the hyperbolic tangent function is centered around zero, while the sigmoid function is not. Notice that the sigmoid function cannot go into the negatives. This means that all negative inputs will be mapped to zero because the sigmoid function is not able to go any lower than zero. The right plot will show the stronger derivative that the hyperbolic tangent function has over the sigmoids less pronounced derivative.
