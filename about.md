@@ -3,8 +3,8 @@ layout: page
 title: About
 ---
 
-Contact Info -
+### Contact Info
 
-[Github](https://github.com/A-I-dan) - [LinkedIn](https://www.linkedin.com/in/aidanwilsonscott/)
+[Github](https://github.com/A-I-dan) :small_blue_diamond: [LinkedIn](https://www.linkedin.com/in/aidanwilsonscott/)
 
-Email - aidan.wilson.scott@gmail.com
+**Email** :email: &rarr; aidan.wilson.scott@gmail.com
