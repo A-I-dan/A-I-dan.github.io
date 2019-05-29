@@ -74,7 +74,7 @@ plt.show()
 ```
 
 
-<img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/unsupervised_post/unsupervised_post_8_0.png?raw=true' style='display: block; margin: auto; width: 800px;'>
+<img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/unsupervised_post/unsupervised_post_8_0.png?raw=true' style='display: block; margin: auto; width: 600px;'>
 
 
 It should be easy to visually pick out the three clusters that we want the algorithm to find.
@@ -101,7 +101,7 @@ plt.scatter(data[0][:,0], data[0][:,1], c=clusters, edgecolors='black', linewidt
 plt.show()
 ```
 
-<img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/unsupervised_post/unsupervised_post_10_1.png?raw=true' style='display: block; margin: auto; width: 800px;'>
+<img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/unsupervised_post/unsupervised_post_10_1.png?raw=true' style='display: block; margin: auto; width: 600px;'>
 
 
 It looks like the k-means clustering algorithm did pretty well!
