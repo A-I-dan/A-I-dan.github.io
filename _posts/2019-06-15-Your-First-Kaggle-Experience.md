@@ -237,7 +237,7 @@ sns.countplot(y_train)
 
 
 
-![png](images/kaggle/output_18_1.png)
+<img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/kaggle/output_18_1.pngraw=true' style='display: block; margin: auto;'>
 
 
 Each handwritten digit in the MNIST dataset has pixels that are an RGB value between 0-255. To normalize this range of values, we can divide each pixel value by 255. This will bring each pixel value closer together (within a 0-1 range) and keep things easier to learn from for our neural network. For example, an RGB value of 56 would then become .219, and an RGB value of 230 would become .901.
@@ -283,7 +283,7 @@ plt.show()
 ```
 
 
-![png](images/kaggle/output_24_0.png)
+<img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/kaggle/output_24_0.png?raw=true' style='display: block; margin: auto;'>
 
 
 Now we can start to create our model. To classify each digit we will use a convolutional neural network. Fortunately, Keras, a high-level Python neural network library, provides an easy and quick resource to build deep learning models. We will have to import Keras, the Sequential model and the necessary layers to use in our CNN.
