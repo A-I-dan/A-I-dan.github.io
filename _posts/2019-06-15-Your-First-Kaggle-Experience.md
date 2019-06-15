@@ -102,17 +102,6 @@ train.head(5)
       <th>pixel6</th>
       <th>pixel7</th>
       <th>pixel8</th>
-      <th>...</th>
-      <th>pixel774</th>
-      <th>pixel775</th>
-      <th>pixel776</th>
-      <th>pixel777</th>
-      <th>pixel778</th>
-      <th>pixel779</th>
-      <th>pixel780</th>
-      <th>pixel781</th>
-      <th>pixel782</th>
-      <th>pixel783</th>
     </tr>
   </thead>
   <tbody>
@@ -128,31 +117,9 @@ train.head(5)
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -176,17 +143,6 @@ train.head(5)
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -200,31 +156,9 @@ train.head(5)
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
