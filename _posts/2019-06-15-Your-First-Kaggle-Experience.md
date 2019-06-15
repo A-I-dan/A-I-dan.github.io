@@ -237,7 +237,7 @@ sns.countplot(y_train)
 
 
 
-<img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/kaggle/output_18_1.pngraw=true' style='display: block; margin: auto;'>
+<img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/kaggle/output_18_1.png?raw=true' style='display: block; margin: auto;'>
 
 
 Each handwritten digit in the MNIST dataset has pixels that are an RGB value between 0-255. To normalize this range of values, we can divide each pixel value by 255. This will bring each pixel value closer together (within a 0-1 range) and keep things easier to learn from for our neural network. For example, an RGB value of 56 would then become .219, and an RGB value of 230 would become .901.
