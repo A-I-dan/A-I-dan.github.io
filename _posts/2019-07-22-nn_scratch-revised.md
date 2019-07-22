@@ -174,6 +174,7 @@ $$S'(x) = S(x) \cdot (1 - S(x))$$
 A derivative is just a fancy word for the slope or the tangent line to a given point. Take a closer look at the sigmoid function's curve on the graph above. Where x=0, the slope is much greater than the slope where x=4 or x=-4. The amount that the weight(s) are updated is based on the derivative. If the slope is a lower value, the neural network is confident in its prediction, and less movement of the weights is needed. If the slope is of a higher value, then the neural networks predictions are closer to .50, or 50% (The highest slope value possible for the sigmoid function is at x=0 and y=.5. y is the prediction.). This means the neural network is not very confident in its prediction and is in need of a greater update to the weights.
 
 We can find the derivative of the sigmoid function with the steps below:
+
 $$ S(x) = \frac{1}{1 + e^{-x}} $$
 
 $$ S'(x) = \frac{d}{dx}(1 + e^{-x})^{-1} $$
@@ -228,7 +229,7 @@ The above image shows the process of multiplying each feature and its correspond
 
 <img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/NN_Revised/Untitled%20presentation-4.png?raw=true' style='display:block; margin:auto; width:500px;'>
 
-The above process will result in the hidden layer's prediction. Each row in the $\sum xw$ matrix will be entered into the sigmoid function. The colors represent the individual processes for each row in the $\sum xw$ matrix. <b>Note:</b> this calculation only represents <b>one training iteration</b>, so the resulting $\hat y$ matrix will not be very accurate. By computing the hidden layer this way, then using backpropagation for many iterations, the result will be much more accurate.
+The above process will result in the hidden layer's prediction. Each row in the &sum;xw matrix will be entered into the sigmoid function. The colors represent the individual processes for each row in the &sum;xw matrix. <b>Note:</b> this calculation only represents <b>one training iteration</b>, so the resulting $\hat y$ matrix will not be very accurate. By computing the hidden layer this way, then using backpropagation for many iterations, the result will be much more accurate.
 
 
 ```python
@@ -238,15 +239,15 @@ def backpropagation(self):
     self.weights += np.dot(self.inputs.T, delta)
 ```
 
-This is the coolest part of the whole neural net: backpropagation. Backpropagation will go back through the layer(s) of the neural network, determine which weights contributed to the output and the error, then change the weights based on the gradient of the hidden layers output. This will be explained further, but for now, the whole process can be written like this, where $y$ is the correct output and $\hat y$ is the hidden layers prediction.:
+This is the coolest part of the whole neural net: backpropagation. Backpropagation will go back through the layer(s) of the neural network, determine which weights contributed to the output and the error, then change the weights based on the gradient of the hidden layers output. This will be explained further, but for now, the whole process can be written like this, where <i>y</i> is the correct output and $\hat y$ is the hidden layers prediction.:
 
 $$ w_{i} = w_i + X^{T}\cdot (y - \hat y) \cdot [\frac{1}{1 + e^{-(∑x_iw_i)}} \cdot (1 - \frac{1}{1 + e^{-(∑x_iw_i)}})]$$
 
-To calculate the error of the hidden layer's predictions, we will simply take the difference between the correct output matrix, $y$, and the hidden layer's matrix, $\hat y$. This process will be shown below.
+To calculate the error of the hidden layer's predictions, we will simply take the difference between the correct output matrix, <i>y</i>, and the hidden layer's matrix, $\hat y$. This process will be shown below.
 
 <img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/NN_Revised/Untitled%20presentation-5.png?raw=true' style='display:block; margin:auto; width:400px;'>
 
-We can now multiply the error and the derivative of the hidden layer's prediction. We know that the derivative of the sigmoid function is $S(x)\cdot (1 - S(x))$. Therefore, the derivative for each of the hidden layer's predictions would be $[\hat y \cdot (1 - \hat y)]$. For example, the first row in the hidden layer's prediction matrix holds a value of $0.62$. We can substitute $\hat y$ with $0.62$ and the result will be the derivative of the prediction. $0.62 \cdot (1 - 0.62) = 0.2356$. Repeating this process for every row in the $\hat y$ matrix will give you a 4x1 matrix of derivatives which you will then multiply with the error matrix.
+We can now multiply the error and the derivative of the hidden layer's prediction. We know that the derivative of the sigmoid function is <i>S(x)(1 - S(x))</i>. Therefore, the derivative for each of the hidden layer's predictions would be $[\hat y \cdot (1 - \hat y)]$. For example, the first row in the hidden layer's prediction matrix holds a value of $0.62$. We can substitute $\hat y$ with $0.62$ and the result will be the derivative of the prediction. <i>0.62 * (1 - 0.62) = 0.2356</i>. Repeating this process for every row in the $\hat y$ matrix will give you a 4x1 matrix of derivatives which you will then multiply with the error matrix.
 <img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/NN_Revised/Untitled%20presentation-7.png?raw=true' style='display:block; margin:auto; width:400px;'>
 
 Multiplying the error and the derivative is used to find the change that is needed. When the sigmoid function outputs a value with a higher confidence (either close to 0 or close to 1), the derivative will be smaller, therefore the change needed will be smaller. If the sigmoid function outputs a value closer to .50, then the derivative is a larger value, which means there needs to be a larger change in order for the neural net to become more confident.
