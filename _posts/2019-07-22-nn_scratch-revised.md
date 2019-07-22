@@ -138,17 +138,6 @@ outputs = np.array([[0], [0], [0], [1], [1], [1]])
 
 As mentioned earlier, neural networks need data to learn from. We will create our input data matrix and the corresponding outputs matrix with Numpy's `.array()` function. Each sample in the input consists of three feature columns made up of 0s and 1s that produce one output of either a 0 or 1. We want to neural network to learn that the outputs are determined by the first feature column in each sample.
 
-$$\begin{matrix}
-[0 & 1 & 0] ==>\\
-[0 & 1 & 1] ==>\\
-[1 & 0 & 0] ==>\\
-[1 & 0 & 1] ==>\end{matrix}\begin{matrix}
-0\\
-0\\
-1\\
-1\end{matrix}$$
-
-
 ```python
 class NeuralNetwork:
 
@@ -175,10 +164,10 @@ This neural network will be using the sigmoid function, or logistic function, as
 <img src='https://github.com/a-i-dan/a-i-dan.github.io/blob/master/images/NN_Revised/Unknown-13?raw=true' style='display: block; margin: auto; width: 600px;'>
 
 The sigmoid function can be written as:
-$ S(x) = \frac{1}{1 + e^{-x}} $
+$$S(x) = \frac{1}{1 + e^{-x}}$$
 
 And the derivative of the sigmoid function can be written as:
-$S'(x) = S(x) \cdot (1 - S(x))$
+$$S'(x) = S(x) \cdot (1 - S(x))$$
 
 ### How to get Derivative
 
@@ -200,18 +189,23 @@ $$  = \frac{-(-e^{-x})}{(1 + e^{-x})^{2}} $$
 $$  = \frac{e^{-x}}{(1 + e^{-x})^{2}} $$
 
 <center>This is the derivative of the sigmoid function, but we can simplify it further by multiplying the numerator by one:</center>
+
 $$  = \frac{1}{(1 + e^{-x})} \cdot \frac{e^{-x}}{(1 + e^{-x})} $$
 
-<center>This will pull out another sigmoid function! We can then use a cool trick to continue the simplification: add one and subtract one to $e^{-x}$. Adding one and subtracting one will not change anything because they cancel each other out. It is a fancy way of adding zero.</center>
+<center>This will pull out another sigmoid function! We can then use a cool trick to continue the simplification: add one and subtract one to <i>e<sup>-x</sup></i>. Adding one and subtracting one will not change anything because they cancel each other out. It is a fancy way of adding zero.</center>
+
 $$  = \frac{1}{(1 + e^{-x})} \cdot \frac{1 + e^{-x} - 1}{(1 + e^{-x})} $$
 
 <center>By adding and subtracting one in the numerator, we can split the fraction up again and pull out another sigmoid function!</center>
+
 $$  = \frac{1}{(1 + e^{-x})} \cdot (\frac{(1 + e^{-x})}{(1 + e^{-x})} - \frac{1}{(1 + e^{-x})}) $$
 
-<center>Now we can simplify $\frac{(1 + e^{-x})}{(1 + e^{-x})}$ to 1 and end up with the sigmoid functions simplified derivative.</center>
+<center>Now we can simplify  <sup>1+e<sup>-x</sup></sup><sub>1+e<sup>-x</sup></sub> to 1 and end up with the sigmoid functions simplified derivative.</center>
+
 $$  = \frac{1}{(1 + e^{-x})} \cdot (1 - \frac{1}{(1 + e^{-x})}) $$
 
-<center>If we write the sigmoid function as $S(x)$, then the derivative can be written as:</center>
+<center>If we write the sigmoid function as <i>S(x)</i>, then the derivative can be written as:</center>
+
 $$  = S(x) \cdot (1 - S(x)) $$
 
 
@@ -278,14 +272,14 @@ def train(self, epochs=25000):
 The time has come to train the neural network. During the training process, the neural net will "learn" which features in the input data correlate with its output, and it will learn to make accurate predictions. To train our neural network, we will create the train function with the number of epochs, or iterations to 25,000. This means the neural network will repeat the weight-updating process 25,000 times. Within the train function, we will call our `feed_forward()` function, then the `backpropagation()` function. For each iteration we will also keep track of the error produced after the `feed_forward()` function has completed. We will keep track of this by appending the error and epoch to the lists that were initialized earlier. I am sure there is an easier way to do this, but for quick prototyping, this way works just fine for now.
 
 The training process follows the equation below for every weight in our neural net:
-* $x_i$ - Feature in Input Data
-* $w_i$ - The Weight that is Being Updated
-* $X^T$ - Transposed Input Data
-* $y$   - Correct Output
-* $\hat y$ - Predicted Output
-* $(y - \hat y)$ - Error
-* $∑x_iw_i$ - Sum of the Products of Input Features and Weights
-* $\frac{1}{1 + e^{(∑x_iw_i)}}$ or $S(∑x_iw_i)$ - Sigmoid Function
+* x<sub>i</sub> - Feature in Input Data
+* w<sub>i</sub> - The Weight that is Being Updated
+* X<sup>T</sup> - Transposed Input Data
+* y   - Correct Output
+* \hat y - Predicted Output
+* (y - \hat y) - Error
+* &sum;x<sub>i</sub>w<sub>i</sub> - Sum of the Products of Input Features and Weights
+* S(&sum;x<sub>i</sub>w<sub>i</sub>) - Sigmoid Function
 
 $$ w_i = w_i + X^{T}\cdot(y - \hat y) \cdot [S(∑x_iw_i) \cdot (1 - S(∑x_iw_i))] $$
 
