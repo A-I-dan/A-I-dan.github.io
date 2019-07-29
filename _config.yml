@@ -5,7 +5,7 @@ author_name:        "Aidan Wilson" # change this to your name
 logo_url:           https://avatars0.githubusercontent.com/u/44011439?s=400&u=11f543c6c15c9f3d610e3d6866316a09da99382a&v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
-url:                https://aidanswilson.github.io # main url
+url:                https://a-i-dan.github.io # main url
 baseurl:            # /blog
 permalink:          /:title # Post permalink
 timezone:           US/Eastern # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
