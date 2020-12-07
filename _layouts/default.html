@@ -19,6 +19,8 @@ published: true
 	</head>
 
 	<body>
+		{% include header.html %}
+		
 				<!-- TradingView Widget BEGIN -->
 		<div class="tradingview-widget-container">
 		  <div class="tradingview-widget-container__widget"></div>
@@ -69,7 +71,7 @@ published: true
 		</div>
 		<!-- TradingView Widget END -->
 
-		{% include header.html %}
+		
 
 		<div id="content">
 			{{ content }}
